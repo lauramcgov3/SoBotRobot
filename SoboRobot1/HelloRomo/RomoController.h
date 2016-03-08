@@ -8,7 +8,7 @@
 #import <RMCharacter/RMCharacter.h>
 #import "AppDelegate.h"
 
-#define INITIAL_HEAD_ANGLE 120.0
+#define INITIAL_HEAD_ANGLE 130.0
 
 
 @interface ViewController : UIViewController <RMCoreDelegate>

@@ -100,46 +100,26 @@
 - (void)addGestureRecognizers
 {
 
-    
-    UITapGestureRecognizer *tapReceived = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tappedScreen:)];
-    [self.view addGestureRecognizer:tapReceived];
 }
 
 
-// Simply tap the screen to stop Romo
-- (void)tappedScreen:(UIGestureRecognizer *)sender
-{
-    self.settings.hidden = NO;
-    sleep(6);
-    self.settings.hidden = YES;
-    
-}
-
-- (void)doubleTap:(UIGestureRecognizer *)sender
-{
-    [self.Romo3 driveForwardWithSpeed:1.0];
-    [self.Romo3 turnByAngle:90.0 withRadius:1.0 speed:1.0 finishingAction:RMCoreTurnFinishingActionDriveForward completion:^(BOOL success, float heading) {
-    }];
-    sleep(1);
-    [self.Romo3 stopDriving];
-}
 
 -(void)match
 {
     [self.Romo setExpression:RMCharacterExpressionExcited withEmotion:RMCharacterEmotionHappy];
-    [self.Romo3 driveForwardWithSpeed:1.5];
+    [self.Romo3 driveForwardWithSpeed:1.0];
     sleep(1);
     [self.Romo3 stopDriving];
 }
 
 -(void)mismatch
 {
-    
+
+    float tiltByAngleInDegrees = 80.0;
     [self.Romo setExpression:RMCharacterExpressionLetDown withEmotion:RMCharacterEmotionHappy];
-    float tiltByAngleInDegrees = -20.0;
-    [self.Romo3 tiltByAngle:tiltByAngleInDegrees
+    [self.Romo3 tiltToAngle:tiltByAngleInDegrees
                  completion:^(BOOL success) {
-                     sleep(2);
+                     sleep(1);
                      [self resetTilt];
                  }];
 }
@@ -153,8 +133,8 @@
 
 -(void)winner
 {
+    [self.Romo3 driveWithRadius:1.0 speed:2.0];
     [self.Romo setExpression:RMCharacterExpressionYippee withEmotion:RMCharacterEmotionHappy];
-    [self.Romo3 driveWithRadius:1.0 speed:1.5];
     sleep(4);
     [self.Romo3 stopDriving];
 }
