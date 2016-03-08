@@ -24,12 +24,12 @@
 		D31781C61C83AB790082B1EB /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D31781C51C83AB790082B1EB /* MCManager.m */; };
 		D367BDC31C4D57A20039E812 /* RMCharacter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D367BDC01C4D57A20039E812 /* RMCharacter.bundle */; };
 		D367BDC41C4D57A20039E812 /* RMCharacter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D367BDC11C4D57A20039E812 /* RMCharacter.framework */; };
-		D367BDC51C4D57A20039E812 /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D367BDC21C4D57A20039E812 /* RMCore.framework */; };
-		D3893FD21C835F0000ED2BF4 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D3893FD11C835F0000ED2BF4 /* settings.png */; };
 		D3893FED1C836F0400ED2BF4 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3893FEC1C836F0400ED2BF4 /* MultipeerConnectivity.framework */; };
-		D3893FF41C8376B700ED2BF4 /* robot.png in Resources */ = {isa = PBXBuildFile; fileRef = D3893FF31C8376B700ED2BF4 /* robot.png */; };
+		D399C4141C8E0A5B002F75A3 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D399C4131C8E0A5B002F75A3 /* settings.png */; };
+		D399C4161C8E0E5A002F75A3 /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D399C4151C8E0E5A002F75A3 /* RMCore.framework */; };
 		D3F1B6CC1C8499EA00028C32 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F1B6CB1C8499EA00028C32 /* SettingsController.m */; };
 		D3F1B6D41C84BD9C00028C32 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F1B6D31C84BD9C00028C32 /* Settings.storyboard */; };
+		D3FF6CA41C8E423B00E7CA0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3FF6CA31C8E423B00E7CA0F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,13 +57,13 @@
 		D31781C51C83AB790082B1EB /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCManager.m; sourceTree = SOURCE_ROOT; };
 		D367BDC01C4D57A20039E812 /* RMCharacter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RMCharacter.bundle; sourceTree = "<group>"; };
 		D367BDC11C4D57A20039E812 /* RMCharacter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RMCharacter.framework; sourceTree = "<group>"; };
-		D367BDC21C4D57A20039E812 /* RMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RMCore.framework; sourceTree = "<group>"; };
-		D3893FD11C835F0000ED2BF4 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = "../../../Symbols/App Images/settings.png"; sourceTree = "<group>"; };
 		D3893FEC1C836F0400ED2BF4 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
-		D3893FF31C8376B700ED2BF4 /* robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = robot.png; path = "../../../Symbols/App Images/robot.png"; sourceTree = "<group>"; };
+		D399C4131C8E0A5B002F75A3 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = "../../../Images/App Images/settings.png"; sourceTree = "<group>"; };
+		D399C4151C8E0E5A002F75A3 /* RMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMCore.framework; path = ../../frameworks/RMCore.framework; sourceTree = "<group>"; };
 		D3F1B6CA1C8499EA00028C32 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = SOURCE_ROOT; };
 		D3F1B6CB1C8499EA00028C32 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = SOURCE_ROOT; };
 		D3F1B6D31C84BD9C00028C32 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = SOURCE_ROOT; };
+		D3FF6CA31C8E423B00E7CA0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +75,9 @@
 				942AC68416E81A520062CA8A /* UIKit.framework in Frameworks */,
 				942AC68616E81A520062CA8A /* Foundation.framework in Frameworks */,
 				942AC68816E81A520062CA8A /* CoreGraphics.framework in Frameworks */,
-				D367BDC51C4D57A20039E812 /* RMCore.framework in Frameworks */,
 				D3893FED1C836F0400ED2BF4 /* MultipeerConnectivity.framework in Frameworks */,
 				942AC6AB16E81AC20062CA8A /* CoreMotion.framework in Frameworks */,
+				D399C4161C8E0E5A002F75A3 /* RMCore.framework in Frameworks */,
 				D367BDC41C4D57A20039E812 /* RMCharacter.framework in Frameworks */,
 				942AC6AC16E81AC20062CA8A /* ExternalAccessory.framework in Frameworks */,
 				942AC6AD16E81AC20062CA8A /* QuartzCore.framework in Frameworks */,
@@ -141,7 +141,6 @@
 		942AC68A16E81A520062CA8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D3893FF31C8376B700ED2BF4 /* robot.png */,
 				942AC68B16E81A520062CA8A /* HelloRomo-Info.plist */,
 				942AC68C16E81A520062CA8A /* InfoPlist.strings */,
 				942AC68F16E81A520062CA8A /* main.m */,
@@ -149,7 +148,8 @@
 				942AC69516E81A520062CA8A /* Default.png */,
 				942AC69716E81A520062CA8A /* Default@2x.png */,
 				942AC69916E81A520062CA8A /* Default-568h@2x.png */,
-				D3893FD11C835F0000ED2BF4 /* settings.png */,
+				D399C4131C8E0A5B002F75A3 /* settings.png */,
+				D3FF6CA31C8E423B00E7CA0F /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,9 +157,9 @@
 		942AC6B216E81AF70062CA8A /* Romo */ = {
 			isa = PBXGroup;
 			children = (
+				D399C4151C8E0E5A002F75A3 /* RMCore.framework */,
 				D367BDC01C4D57A20039E812 /* RMCharacter.bundle */,
 				D367BDC11C4D57A20039E812 /* RMCharacter.framework */,
-				D367BDC21C4D57A20039E812 /* RMCore.framework */,
 			);
 			name = Romo;
 			sourceTree = "<group>";
@@ -216,12 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D367BDC31C4D57A20039E812 /* RMCharacter.bundle in Resources */,
-				D3893FD21C835F0000ED2BF4 /* settings.png in Resources */,
-				D3893FF41C8376B700ED2BF4 /* robot.png in Resources */,
+				D399C4141C8E0A5B002F75A3 /* settings.png in Resources */,
 				942AC68E16E81A520062CA8A /* InfoPlist.strings in Resources */,
 				942AC69616E81A520062CA8A /* Default.png in Resources */,
 				D3F1B6D41C84BD9C00028C32 /* Settings.storyboard in Resources */,
 				942AC69816E81A520062CA8A /* Default@2x.png in Resources */,
+				D3FF6CA41C8E423B00E7CA0F /* Assets.xcassets in Resources */,
 				942AC69A16E81A520062CA8A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +321,7 @@
 					"$(ARCHS_STANDARD)",
 					armv7s,
 				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -348,6 +349,7 @@
 					"$(ARCHS_STANDARD)",
 					armv7s,
 				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -16,11 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5z-Ny-9YR">
-                                <rect key="frame" x="72" y="127" width="136" height="30"/>
-                                <state key="normal" title="Browse For Devices"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mJ-1t-OiO">
+                                <rect key="frame" x="93" y="102" width="153" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Browse for devices"/>
                                 <connections>
-                                    <action selector="button_browseForDevice:" destination="J1s-XT-hhA" eventType="touchUpInside" id="ylV-kR-NcN"/>
+                                    <action selector="button_browseForDevice:" destination="J1s-XT-hhA" eventType="touchUpInside" id="a9q-Sd-8fH"/>
                                 </connections>
                             </button>
                         </subviews>

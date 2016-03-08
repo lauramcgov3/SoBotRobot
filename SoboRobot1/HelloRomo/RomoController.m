@@ -16,6 +16,7 @@
 @property (nonatomic, strong) RMCharacter *Romo;
 
 - (void)addGestureRecognizers;
+- (void)resetTilt;
 
 @end
 
@@ -41,18 +42,6 @@
     
     [self addGestureRecognizers];
     
-//    self.settings = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [self.settings setFrame:CGRectMake(270.0, 30.0, 40.0, 40.0)];
-//    UIImage *buttonImage = [UIImage imageNamed:@"settings.png"];
-//    self.settings.layer.cornerRadius = 10;
-//    self.settings.clipsToBounds = YES;
-//    [self.settings addTarget:self
-//                      action:@selector(settingsButton)
-//            forControlEvents:UIControlEventTouchUpInside];
-//    [self.settings setImage:buttonImage forState:UIControlStateNormal];
-//    [self.view addSubview:self.settings];
-    
-    
     
 }
 
@@ -65,7 +54,7 @@
     [super viewWillAppear:animated];
     
     self.settings = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.settings setFrame:CGRectMake(270.0, 30.0, 40.0, 40.0)];
+    [self.settings setFrame:CGRectMake(260.0, 30.0, 50.0, 50.0)];
     UIImage *buttonImage = [UIImage imageNamed:@"settings.png"];
     self.settings.layer.cornerRadius = 10;
     self.settings.clipsToBounds = YES;
@@ -92,6 +81,7 @@
     }
     
     self.settings.hidden= YES;
+    
 }
 
 - (void)robotDidDisconnect:(RMCoreRobot *)robot
@@ -109,124 +99,109 @@
 
 - (void)addGestureRecognizers
 {
-    // Let's start by adding some gesture recognizers with which to interact with Romo
-    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedLeft:)];
-    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
-    [self.view addGestureRecognizer:swipeLeft];
-    
-    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedRight:)];
-    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRight];
-    
-    UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedUp:)];
-    swipeUp.direction = UISwipeGestureRecognizerDirectionUp;
-    [self.view addGestureRecognizer:swipeUp];
-    
-    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedDown:)];
-    swipeDown.direction = UISwipeGestureRecognizerDirectionDown;
-    [self.view addGestureRecognizer:swipeDown];
+
     
     UITapGestureRecognizer *tapReceived = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tappedScreen:)];
     [self.view addGestureRecognizer:tapReceived];
-    
-    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)];
-    doubleTap.numberOfTapsRequired = 2; //Adds double table
-    [self.view addGestureRecognizer:doubleTap];
 }
 
-
-- (void)swipedLeft:(UIGestureRecognizer *)sender
-{
-    // When the user swipes left, Romo will turn in a circle to his left
-    [self.Romo3 driveWithRadius:-1.0 speed:1.0];
-    sleep(3);
-    [self.Romo3 stopDriving];
-
-}
-
-- (void)swipedRight:(UIGestureRecognizer *)sender
-{
-    // When the user swipes right, Romo will turn in a circle to his right
-    [self.Romo3 driveWithRadius:1.0 speed:1.0];
-}
-
-// Swipe up
-- (void)swipedUp:(UIGestureRecognizer *)sender
-{
-    // Tilt up by ten degrees
-    float tiltByAngleInDegrees = 10.0;
-     
-    [self.Romo3 tiltByAngle:tiltByAngleInDegrees
-                  completion:^(BOOL success) {
-                  }];
-}
-
-// Swipe down
-- (void)swipedDown:(UIGestureRecognizer *)sender
-{
-    // Tilt up by ten degrees
-    float tiltByAngleInDegrees = -10.0;
-    
-    [self.Romo3 tiltByAngle:tiltByAngleInDegrees
-                 completion:^(BOOL success) {
-                 }];
-}
 
 // Simply tap the screen to stop Romo
 - (void)tappedScreen:(UIGestureRecognizer *)sender
 {
-    [self.Romo3 stopDriving];
+    self.settings.hidden = NO;
+    sleep(6);
+    self.settings.hidden = YES;
+    
 }
 
 - (void)doubleTap:(UIGestureRecognizer *)sender
 {
-    if (sender.state == UIGestureRecognizerStateRecognized)
-    {
-        // Constants for the number of expression & emotion enum values
-        int numberOfExpressions = 28;
-        int numberOfEmotions = 7;
-        
-        // Choose a random expression from 1 to numberOfExpressions
-        RMCharacterExpression randomExpression = 1 + (arc4random() % numberOfExpressions);
-        
-        // Choose a random expression from 1 to numberOfEmotions
-        RMCharacterEmotion randomEmotion = 1 + (arc4random() % numberOfEmotions);
-        
-        [self.Romo setExpression:randomExpression withEmotion:randomEmotion];
-    }
+    [self.Romo3 driveForwardWithSpeed:1.0];
+    [self.Romo3 turnByAngle:90.0 withRadius:1.0 speed:1.0 finishingAction:RMCoreTurnFinishingActionDriveForward completion:^(BOOL success, float heading) {
+    }];
+    sleep(1);
+    [self.Romo3 stopDriving];
 }
 
 -(void)match
 {
-    [self.Romo3 driveForwardWithSpeed:0.5];
     [self.Romo setExpression:RMCharacterExpressionExcited withEmotion:RMCharacterEmotionHappy];
+    [self.Romo3 driveForwardWithSpeed:1.5];
     sleep(1);
     [self.Romo3 stopDriving];
 }
 
 -(void)mismatch
 {
-    [self.Romo3 driveBackwardWithSpeed:0.5];
+    
     [self.Romo setExpression:RMCharacterExpressionLetDown withEmotion:RMCharacterEmotionHappy];
-    sleep(1);
-    [self.Romo3 stopDriving];
+    float tiltByAngleInDegrees = -20.0;
+    [self.Romo3 tiltByAngle:tiltByAngleInDegrees
+                 completion:^(BOOL success) {
+                     sleep(2);
+                     [self resetTilt];
+                 }];
+}
+
+-(void) resetTilt
+{
+    [self.Romo3 tiltToAngle:INITIAL_HEAD_ANGLE
+                 completion:^(BOOL success) {
+                 }];
 }
 
 -(void)winner
 {
-    [self.Romo3 driveWithRadius:1.0 speed:1.5];
     [self.Romo setExpression:RMCharacterExpressionYippee withEmotion:RMCharacterEmotionHappy];
-    sleep(3);
+    [self.Romo3 driveWithRadius:1.0 speed:1.5];
+    sleep(4);
     [self.Romo3 stopDriving];
 }
 
+-(void) happy
+{
+    [self.Romo setExpression:RMCharacterExpressionHappy withEmotion:RMCharacterEmotionHappy];
+}
+
+-(void) excited
+{
+    [self.Romo setExpression:RMCharacterExpressionExcited withEmotion:RMCharacterEmotionExcited];
+}
+
+-(void) sad
+{
+    [self.Romo setExpression:RMCharacterExpressionSad withEmotion:RMCharacterEmotionSad];
+}
+
+-(void) angry
+{
+    [self.Romo setExpression:RMCharacterExpressionAngry withEmotion:RMCharacterEmotionBewildered];
+}
+
+-(void) confused
+{
+    [self.Romo setExpression:RMCharacterExpressionBewildered withEmotion:RMCharacterEmotionBewildered];
+}
+
+-(void) tired
+{
+    [self.Romo setExpression:RMCharacterExpressionSleepy withEmotion:RMCharacterEmotionSleepy];
+}
+
+-(void) bored
+{
+    [self.Romo setExpression:RMCharacterExpressionBored withEmotion:RMCharacterEmotionIndifferent];
+}
+
+-(void) afraid
+{
+    [self.Romo setExpression:RMCharacterExpressionScared withEmotion:RMCharacterEmotionScared];
+}
+
+
 -(IBAction)settingsButton:(id)sender
 {
-    NSLog(@"SETTINGS");
-    
-    //UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Settings" bundle:nil];
-    
-    //SettingsController *settingsController = [[SettingsController alloc] initWithNibName:nil bundle:nil];
     
     SettingsController *settingsController = [[UIStoryboard storyboardWithName:@"Settings" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
     
@@ -254,18 +229,48 @@
     [[NSOperationQueue mainQueue]addOperationWithBlock:
      ^{
          
-         if ([receivedMessage isEqualToString:match]) {
-             NSLog(@"Matching strings");
+        if ([receivedMessage isEqualToString:winner])
+         {
+             [self winner];
+         }
+         else if ([receivedMessage isEqualToString:match]) {
              [self match];
          }
          else if ([receivedMessage isEqualToString:mismatch])
          {
-             NSLog(@"Mismatching strings");
              [self mismatch];
          }
-         else if ([receivedMessage isEqualToString:winner])
+         else if ([receivedMessage isEqualToString:@"happy"])
          {
-             [self winner];
+             [self happy];
+         }
+         else if ([receivedMessage isEqualToString:@"excited"])
+         {
+             [self excited];
+         }
+         else if ([receivedMessage isEqualToString:@"sad"])
+         {
+             [self sad];
+         }
+         else if ([receivedMessage isEqualToString:@"angry"])
+         {
+             [self angry];
+         }
+         else if ([receivedMessage isEqualToString:@"confused"])
+         {
+             [self confused];
+         }
+         else if ([receivedMessage isEqualToString:@"tired"])
+         {
+             [self tired];
+         }
+         else if ([receivedMessage isEqualToString:@"bored"])
+         {
+             [self bored];
+         }
+         else if ([receivedMessage isEqualToString:@"afraid"])
+         {
+             [self afraid];
          }
     }];
     

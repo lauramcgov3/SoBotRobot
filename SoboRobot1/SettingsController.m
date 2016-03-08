@@ -25,6 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = @"Settings";
+    
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
     [[self.appDelegate mcManager]setupPeerAndSessionWithDisplayName:[UIDevice currentDevice].name];
     [[self.appDelegate mcManager]advertiseItself:YES];
@@ -38,7 +40,6 @@
     
     self.button_browseForDevices = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.button_browseForDevices setFrame:CGRectMake(270.0, 30.0, 100.0, 40.0)];
-    //UIImage *buttonImage = [UIImage imageNamed:@"settings.png"];
     self.button_browseForDevices.layer.cornerRadius = 10;
     self.button_browseForDevices.clipsToBounds = YES;
     [self.button_browseForDevices addTarget:self
