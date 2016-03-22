@@ -24,11 +24,16 @@
 		D31781C61C83AB790082B1EB /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D31781C51C83AB790082B1EB /* MCManager.m */; };
 		D367BDC31C4D57A20039E812 /* RMCharacter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D367BDC01C4D57A20039E812 /* RMCharacter.bundle */; };
 		D367BDC41C4D57A20039E812 /* RMCharacter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D367BDC11C4D57A20039E812 /* RMCharacter.framework */; };
+		D376A42B1CA04C9B00F906FB /* AVCaptureMultipeerVideoDataOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = D376A42A1CA04C9B00F906FB /* AVCaptureMultipeerVideoDataOutput.m */; };
+		D376A42F1CA04D4900F906FB /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D376A42C1CA04D4900F906FB /* CoreImage.framework */; };
+		D376A4301CA04D4900F906FB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D376A42D1CA04D4900F906FB /* CoreMedia.framework */; };
+		D376A4311CA04D4900F906FB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D376A42E1CA04D4900F906FB /* CoreVideo.framework */; };
 		D3893FED1C836F0400ED2BF4 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3893FEC1C836F0400ED2BF4 /* MultipeerConnectivity.framework */; };
-		D399C4141C8E0A5B002F75A3 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D399C4131C8E0A5B002F75A3 /* settings.png */; };
 		D399C4161C8E0E5A002F75A3 /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D399C4151C8E0E5A002F75A3 /* RMCore.framework */; };
 		D3F1B6CC1C8499EA00028C32 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F1B6CB1C8499EA00028C32 /* SettingsController.m */; };
 		D3F1B6D41C84BD9C00028C32 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F1B6D31C84BD9C00028C32 /* Settings.storyboard */; };
+		D3FE58F61C9B5BE80029F57E /* romo-setting.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FE58F51C9B5BE80029F57E /* romo-setting.png */; };
+		D3FF0C001C95D91000C3E02E /* speech-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FF0BFF1C95D91000C3E02E /* speech-bubble.png */; };
 		D3FF6CA41C8E423B00E7CA0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3FF6CA31C8E423B00E7CA0F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -57,12 +62,18 @@
 		D31781C51C83AB790082B1EB /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCManager.m; sourceTree = SOURCE_ROOT; };
 		D367BDC01C4D57A20039E812 /* RMCharacter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RMCharacter.bundle; sourceTree = "<group>"; };
 		D367BDC11C4D57A20039E812 /* RMCharacter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RMCharacter.framework; sourceTree = "<group>"; };
+		D376A4291CA04C9B00F906FB /* AVCaptureMultipeerVideoDataOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVCaptureMultipeerVideoDataOutput.h; path = ../../../AVCaptureMultipeerVideoDataOutput.h; sourceTree = "<group>"; };
+		D376A42A1CA04C9B00F906FB /* AVCaptureMultipeerVideoDataOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AVCaptureMultipeerVideoDataOutput.m; path = ../../../AVCaptureMultipeerVideoDataOutput.m; sourceTree = "<group>"; };
+		D376A42C1CA04D4900F906FB /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D376A42D1CA04D4900F906FB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D376A42E1CA04D4900F906FB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		D3893FEC1C836F0400ED2BF4 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
-		D399C4131C8E0A5B002F75A3 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = "../../../Images/App Images/settings.png"; sourceTree = "<group>"; };
 		D399C4151C8E0E5A002F75A3 /* RMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMCore.framework; path = ../../frameworks/RMCore.framework; sourceTree = "<group>"; };
 		D3F1B6CA1C8499EA00028C32 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = SOURCE_ROOT; };
 		D3F1B6CB1C8499EA00028C32 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = SOURCE_ROOT; };
 		D3F1B6D31C84BD9C00028C32 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = SOURCE_ROOT; };
+		D3FE58F51C9B5BE80029F57E /* romo-setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "romo-setting.png"; path = "../../../Images/App Images/romo-setting.png"; sourceTree = "<group>"; };
+		D3FF0BFF1C95D91000C3E02E /* speech-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speech-bubble.png"; path = "../../../Images/App Images/speech-bubble.png"; sourceTree = "<group>"; };
 		D3FF6CA31C8E423B00E7CA0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,11 +82,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D376A42F1CA04D4900F906FB /* CoreImage.framework in Frameworks */,
+				D376A4301CA04D4900F906FB /* CoreMedia.framework in Frameworks */,
+				D376A4311CA04D4900F906FB /* CoreVideo.framework in Frameworks */,
+				D3893FED1C836F0400ED2BF4 /* MultipeerConnectivity.framework in Frameworks */,
 				942AC6B416E81C410062CA8A /* AVFoundation.framework in Frameworks */,
 				942AC68416E81A520062CA8A /* UIKit.framework in Frameworks */,
 				942AC68616E81A520062CA8A /* Foundation.framework in Frameworks */,
 				942AC68816E81A520062CA8A /* CoreGraphics.framework in Frameworks */,
-				D3893FED1C836F0400ED2BF4 /* MultipeerConnectivity.framework in Frameworks */,
 				942AC6AB16E81AC20062CA8A /* CoreMotion.framework in Frameworks */,
 				D399C4161C8E0E5A002F75A3 /* RMCore.framework in Frameworks */,
 				D367BDC41C4D57A20039E812 /* RMCharacter.framework in Frameworks */,
@@ -107,8 +121,11 @@
 		942AC68216E81A520062CA8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D3893FEC1C836F0400ED2BF4 /* MultipeerConnectivity.framework */,
+				D376A42C1CA04D4900F906FB /* CoreImage.framework */,
+				D376A42D1CA04D4900F906FB /* CoreMedia.framework */,
+				D376A42E1CA04D4900F906FB /* CoreVideo.framework */,
 				942AC6B216E81AF70062CA8A /* Romo */,
+				D3893FEC1C836F0400ED2BF4 /* MultipeerConnectivity.framework */,
 				942AC6A716E81AC20062CA8A /* CoreMotion.framework */,
 				942AC6B316E81C410062CA8A /* AVFoundation.framework */,
 				942AC6A816E81AC20062CA8A /* ExternalAccessory.framework */,
@@ -133,6 +150,8 @@
 				D3F1B6CA1C8499EA00028C32 /* SettingsController.h */,
 				D3F1B6CB1C8499EA00028C32 /* SettingsController.m */,
 				D3F1B6D31C84BD9C00028C32 /* Settings.storyboard */,
+				D376A4291CA04C9B00F906FB /* AVCaptureMultipeerVideoDataOutput.h */,
+				D376A42A1CA04C9B00F906FB /* AVCaptureMultipeerVideoDataOutput.m */,
 				942AC68A16E81A520062CA8A /* Supporting Files */,
 			);
 			path = HelloRomo;
@@ -148,7 +167,8 @@
 				942AC69516E81A520062CA8A /* Default.png */,
 				942AC69716E81A520062CA8A /* Default@2x.png */,
 				942AC69916E81A520062CA8A /* Default-568h@2x.png */,
-				D399C4131C8E0A5B002F75A3 /* settings.png */,
+				D3FE58F51C9B5BE80029F57E /* romo-setting.png */,
+				D3FF0BFF1C95D91000C3E02E /* speech-bubble.png */,
 				D3FF6CA31C8E423B00E7CA0F /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
@@ -216,11 +236,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D367BDC31C4D57A20039E812 /* RMCharacter.bundle in Resources */,
-				D399C4141C8E0A5B002F75A3 /* settings.png in Resources */,
 				942AC68E16E81A520062CA8A /* InfoPlist.strings in Resources */,
 				942AC69616E81A520062CA8A /* Default.png in Resources */,
 				D3F1B6D41C84BD9C00028C32 /* Settings.storyboard in Resources */,
+				D3FE58F61C9B5BE80029F57E /* romo-setting.png in Resources */,
 				942AC69816E81A520062CA8A /* Default@2x.png in Resources */,
+				D3FF0C001C95D91000C3E02E /* speech-bubble.png in Resources */,
 				D3FF6CA41C8E423B00E7CA0F /* Assets.xcassets in Resources */,
 				942AC69A16E81A520062CA8A /* Default-568h@2x.png in Resources */,
 			);
@@ -237,6 +258,7 @@
 				D31781C61C83AB790082B1EB /* MCManager.m in Sources */,
 				D3F1B6CC1C8499EA00028C32 /* SettingsController.m in Sources */,
 				942AC69416E81A520062CA8A /* AppDelegate.m in Sources */,
+				D376A42B1CA04C9B00F906FB /* AVCaptureMultipeerVideoDataOutput.m in Sources */,
 				942AC69D16E81A520062CA8A /* RomoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

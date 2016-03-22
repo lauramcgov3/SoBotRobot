@@ -16,6 +16,7 @@
 @property (nonatomic, strong) AppDelegate *appDelegate;
 
 @property (nonatomic, strong) UIButton *settings;
+@property (nonatomic, strong) UIButton *speech;
 
 
 @end
