@@ -6,7 +6,6 @@
 //  Copyright © 2016 Laura. All rights reserved.
 //
 
-
 // Imports for class
 #import <AVFoundation/AVFoundation.h>
 #import "AVCaptureMultipeerVideoDataOutput.h"
@@ -244,8 +243,6 @@ static bool isTalk = false;
 // Method to handle reactions for interaction
 - (void) talkReaction
 {
-    NSLog(@"Self word: %@", self.word);
-    
     if ([self.word isEqualToString:@"run"])
     {
         [self.Romo setExpression:RMCharacterExpressionProud];
@@ -384,14 +381,11 @@ static bool isTalk = false;
     {
         self.xCoord= [points objectAtIndex:0];
         self.yCoord= [points objectAtIndex:1];
-        NSLog(@"X: %@", self.xCoord);
-        NSLog(@"Y: %@", self.yCoord);
     }
     
     // Stop
     if ([self.xCoord isEqualToString:@"0"] && [self.yCoord isEqualToString:@"0"])
     {
-        NSLog(@"stop");
         isBackward = false;
         isForward = false;
         [self.Romo3 stopDriving];
@@ -400,7 +394,6 @@ static bool isTalk = false;
     // Backwards
     else if ([self.yCoord isEqualToString:@"29"])
     {
-        NSLog(@"Backward");
         [self.Romo3 driveBackwardWithSpeed:1.0];
         isBackward = true;
         isForward = false;
@@ -408,7 +401,6 @@ static bool isTalk = false;
     // Forwards
     else if ([self.yCoord isEqualToString:@"-29"])
     {
-        NSLog(@"Forward");
         [self.Romo3 driveForwardWithSpeed:1.0];
         isForward = true;
         isBackward = false;
@@ -419,17 +411,14 @@ static bool isTalk = false;
     {
         if (isBackward == true)
         {
-            NSLog(@"Left backward");
             [self.Romo3 driveWithLeftMotorPower:-1.0 rightMotorPower:0.5];
         }
         else if (isForward == true)
         {
-            NSLog(@"Left forward");
             [self.Romo3 driveWithLeftMotorPower:-0.5 rightMotorPower:1.0];
         }
         else if (isForward == false && isBackward == false)
         {
-            NSLog(@"Left");
             [self.Romo3 driveWithLeftMotorPower:-1.0 rightMotorPower:1.0];
         }
     }
@@ -439,18 +428,15 @@ static bool isTalk = false;
     {
         if (isBackward == true)
         {
-            NSLog(@"Right backward");
             [self.Romo3 driveWithLeftMotorPower:0.5 rightMotorPower:-1.0];
         }
         else if (isForward == true)
         {
-            NSLog(@"Right forward");
             [self.Romo3 driveWithLeftMotorPower:1.0 rightMotorPower:-0.5];
         }
         else if (isForward == false && isBackward == false)
         {
-            NSLog(@"Right");
-            [self.Romo3 driveWithLeftMotorPower:1.0 rightMotorPower:-1.0];
+            [self.Romo3 driveWithLeftMotorPower:1.0 rightMotorPower:0];
         }
     }
     
@@ -464,7 +450,6 @@ static bool isTalk = false;
     NSString *tilt = [points objectAtIndex:1];
     
     float tiltAngle = [tilt floatValue];
-    NSLog(@"Tilt angle: %f", tiltAngle);
     
     [self.Romo3 tiltToAngle:tiltAngle completion:^(BOOL success){}];
 }
@@ -522,7 +507,6 @@ static bool isTalk = false;
 // Method for sending message
 -(void)sendMessage: (NSString *)str
 {
-    NSLog(@"Message: %@", str);
     NSString *message = str;
     NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
     NSArray *allPeers = self.appDelegate.mcManager.session.connectedPeers;
@@ -595,37 +579,31 @@ static bool isTalk = false;
          }
          else if ([receivedMessage isEqualToString:@"yes running"] || [receivedMessage isEqualToString:@"no running"])
          {
-             NSLog(@"%@", receivedMessage);
              self.talk = @"this is how i run";
              self.word = @"run";
          }
          else if ([receivedMessage isEqualToString:@"yes cats"] || [receivedMessage isEqualToString:@"no cats"])
          {
-             NSLog(@"%@", receivedMessage);
              self.talk = @"i really hate cats !";
              self.word = @"hate";
          }
          else if ([receivedMessage isEqualToString:@"yes dogs"] || [receivedMessage isEqualToString:@"no dogs"])
          {
-             NSLog(@"%@", receivedMessage);
              self.talk = @"dogs are my favourite animal";
              self.word = @"love";
          }
          else if ([receivedMessage isEqualToString:@"yes sleeping"] || [receivedMessage isEqualToString:@"no sleeping"])
          {
-             NSLog(@"%@", receivedMessage);
              self.talk = @"sleep gives me more energy";
              self.word = @"energy";
          }
          else if ([receivedMessage isEqualToString:@"yes playing"] || [receivedMessage isEqualToString:@"no playing"])
          {
-             NSLog(@"%@", receivedMessage);
              self.talk = @"i could play all day";
              self.word = @"play";
          }
          else if ([receivedMessage isEqualToString:@"yes swimming"] || [receivedMessage isEqualToString:@"no swimming"])
          {
-             NSLog(@"%@", receivedMessage);
              self.talk = @"robots cannot go swimming !";
              self.word = @"swimming";
          }
@@ -684,6 +662,10 @@ static bool isTalk = false;
          else if ([receivedMessage isEqualToString:@"disgust"])
          {
              [self disgust];
+         }
+         else if ([receivedMessage isEqualToString:@"reset"])
+         {
+             [self resetTilt];
          }
          
      }];
