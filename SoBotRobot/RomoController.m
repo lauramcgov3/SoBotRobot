@@ -54,7 +54,6 @@ static bool isTalk = false;
     
     // Grab a shared instance of the Romo character
     self.Romo = [RMCharacter Romo];
-    [RMCore setDelegate:self];
     
     // For Multipeer Connectivity
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
@@ -95,12 +94,9 @@ static bool isTalk = false;
 // Settings Button action
 -(IBAction)settingsButton:(id)sender
 {
-    
-    SettingsController *settingsController = [[UIStoryboard storyboardWithName:@"Settings" bundle:nil] instantiateViewControllerWithIdentifier:@"SettingsController"];
-    
+    SettingsController *settingsController = [[UIStoryboard storyboardWithName:@"Settings" bundle:nil]
+                                              instantiateViewControllerWithIdentifier:@"SettingsController"];
     [self.navigationController pushViewController:settingsController animated:YES];
-    
-    
 }
 
 # pragma mark - RMCoreDelegateMethods
@@ -310,6 +306,7 @@ static bool isTalk = false;
 // Method for streaming video
 - (void) videoSession
 {
+    
     // Create the AVCaptureSession
     _captureSession = [[AVCaptureSession alloc] init];
     
@@ -344,7 +341,7 @@ static bool isTalk = false;
         
         [_captureSession addOutput:multipeerVideoOutput];
         
-        [self setFrameRate:15 onDevice:videoDevice];
+        [self setFrameRate:35 onDevice:videoDevice];
         
         [_captureSession startRunning];
     }
@@ -436,7 +433,7 @@ static bool isTalk = false;
         }
         else if (isForward == false && isBackward == false)
         {
-            [self.Romo3 driveWithLeftMotorPower:1.0 rightMotorPower:0];
+            [self.Romo3 driveWithLeftMotorPower:1.0 rightMotorPower:-1.0];
         }
     }
     
@@ -655,7 +652,7 @@ static bool isTalk = false;
          {
              [self bored];
          }
-         else if ([receivedMessage isEqualToString:@"afraid"])
+         else if ([receivedMessage isEqualToString:@"scared"])
          {
              [self afraid];
          }

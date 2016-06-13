@@ -13,7 +13,7 @@
 @interface SettingsController : UIViewController <MCBrowserViewControllerDelegate>
 
 @property (nonatomic, strong) AppDelegate *appDelegate;
-@property (weak, nonatomic) IBOutlet UIButton *browseForDevices;
+@property (weak, nonatomic) IBOutlet UIButton *button_browseForDevices;
 
 
 @end

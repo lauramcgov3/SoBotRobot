@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D318E64E1CB77A21004523AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D318E64B1CB77A21004523AE /* Default-568h@2x.png */; };
+		D318E64F1CB77A21004523AE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D318E64C1CB77A21004523AE /* Default.png */; };
+		D318E6501CB77A21004523AE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D318E64D1CB77A21004523AE /* Default@2x.png */; };
+		D348139B1CBD571E00D8F2CF /* RMCharacter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D34813981CBD571E00D8F2CF /* RMCharacter.bundle */; };
+		D348139C1CBD571E00D8F2CF /* RMCharacter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34813991CBD571E00D8F2CF /* RMCharacter.framework */; };
+		D348139D1CBD571F00D8F2CF /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D348139A1CBD571E00D8F2CF /* RMCore.framework */; };
+		D34813A11CBD574C00D8F2CF /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D34813A01CBD574C00D8F2CF /* MCManager.m */; };
+		D34813A41CBD57E700D8F2CF /* romo-setting.png in Resources */ = {isa = PBXBuildFile; fileRef = D34813A21CBD57E700D8F2CF /* romo-setting.png */; };
+		D34813A51CBD57E700D8F2CF /* speech-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D34813A31CBD57E700D8F2CF /* speech-bubble.png */; };
+		D34813A71CBD777100D8F2CF /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34813A61CBD777100D8F2CF /* ExternalAccessory.framework */; };
 		D3AE390C1CAAFE3C0049E8AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE390B1CAAFE3C0049E8AA /* main.m */; };
 		D3AE390F1CAAFE3C0049E8AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE390E1CAAFE3C0049E8AA /* AppDelegate.m */; };
 		D3AE39121CAAFE3C0049E8AA /* RomoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE39111CAAFE3C0049E8AA /* RomoController.m */; };
@@ -15,14 +25,8 @@
 		D3AE391A1CAAFE3C0049E8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3AE39191CAAFE3C0049E8AA /* Assets.xcassets */; };
 		D3AE39281CAAFE3C0049E8AA /* SoBotRobotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE39271CAAFE3C0049E8AA /* SoBotRobotTests.m */; };
 		D3AE39331CAAFE3C0049E8AA /* SoBotRobotUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE39321CAAFE3C0049E8AA /* SoBotRobotUITests.m */; };
-		D3AE39431CAAFEE20049E8AA /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE39421CAAFEE20049E8AA /* MCManager.m */; };
 		D3AE39471CAAFFBE0049E8AA /* AVCaptureMultipeerVideoDataOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE39461CAAFFBE0049E8AA /* AVCaptureMultipeerVideoDataOutput.m */; };
 		D3AE394B1CAB00840049E8AA /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE394A1CAB00840049E8AA /* SettingsController.m */; };
-		D3AE394D1CAB01D90049E8AA /* romo-setting.png in Resources */ = {isa = PBXBuildFile; fileRef = D3AE394C1CAB01D90049E8AA /* romo-setting.png */; };
-		D3AE394F1CAB01E30049E8AA /* speech-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D3AE394E1CAB01E30049E8AA /* speech-bubble.png */; };
-		D3AE39531CAB01FF0049E8AA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3AE39501CAB01FF0049E8AA /* Default-568h@2x.png */; };
-		D3AE39541CAB01FF0049E8AA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3AE39511CAB01FF0049E8AA /* Default.png */; };
-		D3AE39551CAB01FF0049E8AA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3AE39521CAB01FF0049E8AA /* Default@2x.png */; };
 		D3AE39601CAB03710049E8AA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE395D1CAB03710049E8AA /* CoreImage.framework */; };
 		D3AE39611CAB03710049E8AA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE395E1CAB03710049E8AA /* CoreMedia.framework */; };
 		D3AE39621CAB03710049E8AA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE395F1CAB03710049E8AA /* CoreVideo.framework */; };
@@ -32,11 +36,7 @@
 		D3AE396A1CAB038C0049E8AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE39691CAB038C0049E8AA /* Foundation.framework */; };
 		D3AE396C1CAB03960049E8AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE396B1CAB03960049E8AA /* CoreGraphics.framework */; };
 		D3AE396E1CAB039E0049E8AA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE396D1CAB039E0049E8AA /* CoreMotion.framework */; };
-		D3AE39701CAB03A60049E8AA /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE396F1CAB03A60049E8AA /* ExternalAccessory.framework */; };
 		D3AE39721CAB03AD0049E8AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE39711CAB03AD0049E8AA /* QuartzCore.framework */; };
-		D3AE39761CAB05FF0049E8AA /* RMCharacter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE39561CAB03190049E8AA /* RMCharacter.framework */; };
-		D3AE39771CAB05FF0049E8AA /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE39741CAB04830049E8AA /* RMCore.framework */; };
-		D3AE39781CAB05FF0049E8AA /* RMCharacter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3AE39581CAB03190049E8AA /* RMCharacter.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +57,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D318E64B1CB77A21004523AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		D318E64C1CB77A21004523AE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		D318E64D1CB77A21004523AE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		D34813981CBD571E00D8F2CF /* RMCharacter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RMCharacter.bundle; path = Frameworks/RMCharacter.bundle; sourceTree = "<group>"; };
+		D34813991CBD571E00D8F2CF /* RMCharacter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMCharacter.framework; path = Frameworks/RMCharacter.framework; sourceTree = "<group>"; };
+		D348139A1CBD571E00D8F2CF /* RMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMCore.framework; path = Frameworks/RMCore.framework; sourceTree = "<group>"; };
+		D348139E1CBD574C00D8F2CF /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		D348139F1CBD574C00D8F2CF /* MCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCManager.h; sourceTree = "<group>"; };
+		D34813A01CBD574C00D8F2CF /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCManager.m; sourceTree = "<group>"; };
+		D34813A21CBD57E700D8F2CF /* romo-setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "romo-setting.png"; sourceTree = "<group>"; };
+		D34813A31CBD57E700D8F2CF /* speech-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble.png"; sourceTree = "<group>"; };
+		D34813A61CBD777100D8F2CF /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		D34813A81CBD777200D8F2CF /* SoBotRobot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SoBotRobot.entitlements; sourceTree = "<group>"; };
 		D3AE39071CAAFE3C0049E8AA /* SoBotRobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoBotRobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE390B1CAAFE3C0049E8AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3AE390D1CAAFE3C0049E8AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,20 +86,10 @@
 		D3AE392E1CAAFE3C0049E8AA /* SoBotRobotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoBotRobotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE39321CAAFE3C0049E8AA /* SoBotRobotUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoBotRobotUITests.m; sourceTree = "<group>"; };
 		D3AE39341CAAFE3C0049E8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3AE39401CAAFEE20049E8AA /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = ../../../Documents/Macros.h; sourceTree = "<group>"; };
-		D3AE39411CAAFEE20049E8AA /* MCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCManager.h; path = ../../../Documents/MCManager.h; sourceTree = "<group>"; };
-		D3AE39421CAAFEE20049E8AA /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCManager.m; path = ../../../Documents/MCManager.m; sourceTree = "<group>"; };
 		D3AE39451CAAFFA20049E8AA /* AVCaptureMultipeerVideoDataOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCaptureMultipeerVideoDataOutput.h; sourceTree = "<group>"; };
 		D3AE39461CAAFFBE0049E8AA /* AVCaptureMultipeerVideoDataOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureMultipeerVideoDataOutput.m; sourceTree = "<group>"; };
 		D3AE39491CAB00630049E8AA /* SettingsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		D3AE394A1CAB00840049E8AA /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
-		D3AE394C1CAB01D90049E8AA /* romo-setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "romo-setting.png"; path = "../../../Documents/Images/App Images/romo-setting.png"; sourceTree = "<group>"; };
-		D3AE394E1CAB01E30049E8AA /* speech-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speech-bubble.png"; path = "../../../Documents/Images/App Images/speech-bubble.png"; sourceTree = "<group>"; };
-		D3AE39501CAB01FF0049E8AA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../Documents/Default-568h@2x.png"; sourceTree = "<group>"; };
-		D3AE39511CAB01FF0049E8AA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../../Documents/Default.png; sourceTree = "<group>"; };
-		D3AE39521CAB01FF0049E8AA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../../Documents/Default@2x.png"; sourceTree = "<group>"; };
-		D3AE39561CAB03190049E8AA /* RMCharacter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMCharacter.framework; path = ../../Documents/frameworks/RMCharacter.framework; sourceTree = "<group>"; };
-		D3AE39581CAB03190049E8AA /* RMCharacter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RMCharacter.bundle; path = ../../Documents/frameworks/RMCharacter.bundle; sourceTree = "<group>"; };
 		D3AE395D1CAB03710049E8AA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		D3AE395E1CAB03710049E8AA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D3AE395F1CAB03710049E8AA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -96,9 +99,7 @@
 		D3AE39691CAB038C0049E8AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3AE396B1CAB03960049E8AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D3AE396D1CAB039E0049E8AA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		D3AE396F1CAB03A60049E8AA /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		D3AE39711CAB03AD0049E8AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D3AE39741CAB04830049E8AA /* RMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMCore.framework; path = ../../Documents/frameworks/RMCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3AE39761CAB05FF0049E8AA /* RMCharacter.framework in Frameworks */,
-				D3AE39771CAB05FF0049E8AA /* RMCore.framework in Frameworks */,
+				D348139D1CBD571F00D8F2CF /* RMCore.framework in Frameworks */,
 				D3AE39721CAB03AD0049E8AA /* QuartzCore.framework in Frameworks */,
-				D3AE39701CAB03A60049E8AA /* ExternalAccessory.framework in Frameworks */,
+				D348139C1CBD571E00D8F2CF /* RMCharacter.framework in Frameworks */,
 				D3AE396E1CAB039E0049E8AA /* CoreMotion.framework in Frameworks */,
 				D3AE396C1CAB03960049E8AA /* CoreGraphics.framework in Frameworks */,
 				D3AE396A1CAB038C0049E8AA /* Foundation.framework in Frameworks */,
@@ -119,6 +119,7 @@
 				D3AE39601CAB03710049E8AA /* CoreImage.framework in Frameworks */,
 				D3AE39611CAB03710049E8AA /* CoreMedia.framework in Frameworks */,
 				D3AE39621CAB03710049E8AA /* CoreVideo.framework in Frameworks */,
+				D34813A71CBD777100D8F2CF /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +164,7 @@
 		D3AE39091CAAFE3C0049E8AA /* SoBotRobot */ = {
 			isa = PBXGroup;
 			children = (
+				D34813A81CBD777200D8F2CF /* SoBotRobot.entitlements */,
 				D3AE390D1CAAFE3C0049E8AA /* AppDelegate.h */,
 				D3AE390E1CAAFE3C0049E8AA /* AppDelegate.m */,
 				D3AE39101CAAFE3C0049E8AA /* RomoController.h */,
@@ -178,14 +180,14 @@
 			isa = PBXGroup;
 			children = (
 				D3AE39191CAAFE3C0049E8AA /* Assets.xcassets */,
+				D34813A21CBD57E700D8F2CF /* romo-setting.png */,
+				D34813A31CBD57E700D8F2CF /* speech-bubble.png */,
 				D3AE391E1CAAFE3C0049E8AA /* Info.plist */,
 				D3AE39161CAAFE3C0049E8AA /* SoBotRobot.xcdatamodeld */,
 				D3AE390B1CAAFE3C0049E8AA /* main.m */,
-				D3AE394C1CAB01D90049E8AA /* romo-setting.png */,
-				D3AE394E1CAB01E30049E8AA /* speech-bubble.png */,
-				D3AE39501CAB01FF0049E8AA /* Default-568h@2x.png */,
-				D3AE39511CAB01FF0049E8AA /* Default.png */,
-				D3AE39521CAB01FF0049E8AA /* Default@2x.png */,
+				D318E64B1CB77A21004523AE /* Default-568h@2x.png */,
+				D318E64C1CB77A21004523AE /* Default.png */,
+				D318E64D1CB77A21004523AE /* Default@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,9 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				D3AE39131CAAFE3C0049E8AA /* Settings.storyboard */,
-				D3AE39401CAAFEE20049E8AA /* Macros.h */,
-				D3AE39411CAAFEE20049E8AA /* MCManager.h */,
-				D3AE39421CAAFEE20049E8AA /* MCManager.m */,
+				D348139E1CBD574C00D8F2CF /* Macros.h */,
+				D348139F1CBD574C00D8F2CF /* MCManager.h */,
+				D34813A01CBD574C00D8F2CF /* MCManager.m */,
 				D3AE39491CAB00630049E8AA /* SettingsController.h */,
 				D3AE394A1CAB00840049E8AA /* SettingsController.m */,
 			);
@@ -233,8 +235,9 @@
 		D3AE395C1CAB031E0049E8AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D34813A61CBD777100D8F2CF /* ExternalAccessory.framework */,
+				D3AE39731CAB04540049E8AA /* Romo */,
 				D3AE39711CAB03AD0049E8AA /* QuartzCore.framework */,
-				D3AE396F1CAB03A60049E8AA /* ExternalAccessory.framework */,
 				D3AE396D1CAB039E0049E8AA /* CoreMotion.framework */,
 				D3AE396B1CAB03960049E8AA /* CoreGraphics.framework */,
 				D3AE39691CAB038C0049E8AA /* Foundation.framework */,
@@ -244,7 +247,6 @@
 				D3AE395D1CAB03710049E8AA /* CoreImage.framework */,
 				D3AE395E1CAB03710049E8AA /* CoreMedia.framework */,
 				D3AE395F1CAB03710049E8AA /* CoreVideo.framework */,
-				D3AE39731CAB04540049E8AA /* Romo */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,9 +254,9 @@
 		D3AE39731CAB04540049E8AA /* Romo */ = {
 			isa = PBXGroup;
 			children = (
-				D3AE39741CAB04830049E8AA /* RMCore.framework */,
-				D3AE39561CAB03190049E8AA /* RMCharacter.framework */,
-				D3AE39581CAB03190049E8AA /* RMCharacter.bundle */,
+				D34813981CBD571E00D8F2CF /* RMCharacter.bundle */,
+				D34813991CBD571E00D8F2CF /* RMCharacter.framework */,
+				D348139A1CBD571E00D8F2CF /* RMCore.framework */,
 			);
 			name = Romo;
 			sourceTree = "<group>";
@@ -326,6 +328,12 @@
 				TargetAttributes = {
 					D3AE39061CAAFE3C0049E8AA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 25H3ZVC74D;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					D3AE39221CAAFE3C0049E8AA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -362,14 +370,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3AE394D1CAB01D90049E8AA /* romo-setting.png in Resources */,
-				D3AE39541CAB01FF0049E8AA /* Default.png in Resources */,
-				D3AE394F1CAB01E30049E8AA /* speech-bubble.png in Resources */,
+				D34813A41CBD57E700D8F2CF /* romo-setting.png in Resources */,
+				D318E6501CB77A21004523AE /* Default@2x.png in Resources */,
 				D3AE391A1CAAFE3C0049E8AA /* Assets.xcassets in Resources */,
-				D3AE39531CAB01FF0049E8AA /* Default-568h@2x.png in Resources */,
-				D3AE39551CAB01FF0049E8AA /* Default@2x.png in Resources */,
-				D3AE39781CAB05FF0049E8AA /* RMCharacter.bundle in Resources */,
+				D318E64F1CB77A21004523AE /* Default.png in Resources */,
 				D3AE39151CAAFE3C0049E8AA /* Settings.storyboard in Resources */,
+				D34813A51CBD57E700D8F2CF /* speech-bubble.png in Resources */,
+				D348139B1CBD571E00D8F2CF /* RMCharacter.bundle in Resources */,
+				D318E64E1CB77A21004523AE /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3AE39431CAAFEE20049E8AA /* MCManager.m in Sources */,
+				D34813A11CBD574C00D8F2CF /* MCManager.m in Sources */,
 				D3AE39181CAAFE3C0049E8AA /* SoBotRobot.xcdatamodeld in Sources */,
 				D3AE394B1CAB00840049E8AA /* SettingsController.m in Sources */,
 				D3AE39121CAAFE3C0049E8AA /* RomoController.m in Sources */,
@@ -534,19 +542,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = SoBotRobot/SoBotRobot.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../RMCore/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../../RMCharacter/Products/Release-iphoneos\"",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = SoBotRobot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DIT.SoBotRobot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DIT.SoBotRobotFYP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 			};
@@ -557,19 +570,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = SoBotRobot/SoBotRobot.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../RMCore/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../../RMCharacter/Products/Release-iphoneos\"",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = SoBotRobot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DIT.SoBotRobot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DIT.SoBotRobotFYP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 			};
@@ -642,6 +660,7 @@
 				D3AE39391CAAFE3C0049E8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3AE393A1CAAFE3C0049E8AA /* Build configuration list for PBXNativeTarget "SoBotRobotTests" */ = {
 			isa = XCConfigurationList;
@@ -650,6 +669,7 @@
 				D3AE393C1CAAFE3C0049E8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3AE393D1CAAFE3C0049E8AA /* Build configuration list for PBXNativeTarget "SoBotRobotUITests" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +678,7 @@
 				D3AE393F1CAAFE3C0049E8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
